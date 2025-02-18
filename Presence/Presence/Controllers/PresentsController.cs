@@ -134,31 +134,30 @@ namespace Presence.Controllers
             return View(present);
         }
 
-
-        //Upload 
-
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Upload(IFormFile csvFile)
         {
-           
+            Debug.WriteLine("Upload method started.");
+
             if (csvFile == null || csvFile.Length == 0)
             {
+                Debug.WriteLine("Validation failed: File is null or empty.");
                 ModelState.AddModelError("File", "Please upload a valid CSV file.");
                 return RedirectToAction("Index");
             }
 
             if (Path.GetExtension(csvFile.FileName).ToLower() != ".csv")
             {
+                Debug.WriteLine("Validation failed: File is not a CSV.");
                 ModelState.AddModelError("File", "Only CSV files are allowed.");
                 return RedirectToAction("Index");
             }
 
             try
             {
-           
                 var presences = new List<Present>();
+
                 using (var streamReader = new StreamReader(csvFile.OpenReadStream()))
                 {
                     string line;
@@ -167,75 +166,98 @@ namespace Presence.Controllers
                     while ((line = await streamReader.ReadLineAsync()) != null)
                     {
                         row++;
-                        if (row == 1) continue; // Skip the header row
+                        Debug.WriteLine($"Processing row {row}: {line}");
+
+                        if (row == 1)
+                        {
+                            Debug.WriteLine("Skipping header row.");
+                            continue;
+                        }
 
                         var values = line.Split(',');
 
+                        if (values.Length < 7)
+                        {
+                            Debug.WriteLine($"Row {row} skipped: Not enough columns.");
+                            continue;
+                        }
+
                         try
                         {
+                            Debug.WriteLine($"Searching for Departement: {values[0]}");
+                            if (int.TryParse(values[0], out int departementId))
+                            {
+                                var departement = await _context.Departements
+                                    .FirstOrDefaultAsync(a => a.Id == departementId);
+                            }
+                            else
+                            {
+                                Debug.WriteLine("Invalid departement ID");
+                            }
+;
 
+                            Debug.WriteLine($"Searching for Employe: {values[1]}");
+                            if (int.TryParse(values[1], out int employeId))
+                            {
+                                var employe = await _context.Employes
+                                    .FirstOrDefaultAsync(a => a.Id == employeId);
+                            }
+                            else
+                            {
+                                Debug.WriteLine("Invalid employe ID");
+                            }
+                            if (int.TryParse(values[2], out int shiftId))
+                            {
+                                var shifts = await _context.Shifts
+                                    .FirstOrDefaultAsync(a => a.Id == shiftId);
+                            }
+                            else
+                            {
+                                Debug.WriteLine("Invalid shift ID");
+                            }
 
-                            var departement = _context.Departements.FirstOrDefault(a => a.NomDepartement.Equals(values[1]));
-                            var employe = _context.Employes.FirstOrDefault(a => a.Nom.Equals(values[13]));
-                            var shift = _context.Shifts.FirstOrDefault(a => a.ShiftName.Equals(values[14]));
+                         
+
+                        
+
+                      
+
+                           
 
                             var present = new Present
                             {
-                                IdDepartement = departement?.Id ?? 0,
-                                IdEmploye = employe?.Id ?? 0,
-                                IdShift = shift?.Id ?? 0,
-                                Jour = TryParseWithDebug(() => ParseDate(values[4]), "Jour"),
-                                Presente = TryParseWithDebug(() => ParseBoolean(values[5]), "Presente"),
-                                JourIn = TryParseWithDebug(() => values[6], "JourIn"),
-                                JourOut = TryParseWithDebug(() => values[7], "JourOut"),
-
-                                // Assuming values[6] and values[7] are the strings that you're parsing
-
-
+                                IdDepartement = departementId,
+                                IdEmploye = employeId,
+                                IdShift = shiftId,
+                                Jour = TryParseWithDebug(() => ParseDate(values[3]), "Jour"),
+                                JourIn = values[4],
+                                JourOut = values[5],
+                                Presente = false
                             };
 
-                            Debug.WriteLine("==========================================================");
-                            Debug.WriteLine("===================ARY ATO KA Mandalo pory ato ve =======================================", present);
-
-                            Debug.WriteLine("==========================================================");
+                            Debug.WriteLine($"Row {row} successfully parsed and added to list.");
                             presences.Add(present);
                         }
                         catch (Exception ex)
                         {
                             Debug.WriteLine($"Error parsing row {row}: {ex.Message}");
-                            ModelState.AddModelError("File", $"Error parsing row {row}: {ex.Message}");
                             continue;
                         }
                     }
                 }
 
-                using var transaction = await _context.Database.BeginTransactionAsync();
-
-                try
+                if (presences.Count > 0)
                 {
-                    foreach (var present in presences)
-                    {
-                        Debug.WriteLine("==========================================================");
-                        Debug.WriteLine("===================FARANY ATO Mandalo pory ato ve =======================================", present);
-
-                        Debug.WriteLine("==========================================================");
-                        _context.Presents.Add(present);
-                        await _context.SaveChangesAsync();
-
-                        // Optionally, you can generate barcodes or any other post-processing tasks here
-                    }
-
+                    Debug.WriteLine($"Inserting {presences.Count} records into database.");
+                    await _context.Presents.AddRangeAsync(presences);
                     await _context.SaveChangesAsync();
-                    await transaction.CommitAsync();
                 }
-                catch (Exception ex)
+                else
                 {
-                    await transaction.RollbackAsync();
-                    Debug.WriteLine($"Error during bulk insert: {ex.Message}");
-                    ModelState.AddModelError("File", "An error occurred during the upload process.");
-                    return RedirectToAction("Index");
+                    Debug.WriteLine("No valid rows found. Nothing to insert.");
                 }
 
+                Debug.WriteLine("Upload method completed successfully.");
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
@@ -245,6 +267,8 @@ namespace Presence.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+
         private DateOnly? ParseDate(string dateString)
         {
             // Define multiple possible formats to parse

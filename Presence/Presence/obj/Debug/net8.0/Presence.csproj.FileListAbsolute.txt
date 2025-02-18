@@ -530,6 +530,7 @@ C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Deb
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\Presence.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\Presence.RazorAssemblyInfo.cache
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\Presence.RazorAssemblyInfo.cs
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\Presence.sourcelink.json
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\staticwebassets\msbuild.Presence.Microsoft.AspNetCore.StaticWebAssets.props
