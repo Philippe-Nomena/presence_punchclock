@@ -56,11 +56,12 @@ namespace Presence.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,ShiftName,Earliest_In,In_Time,Out_Time,Latest_Out")] Shift shift)
         {
-          
+            if (ModelState.IsValid)
+            {
                 _context.Add(shift);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-         
+            }
             return View(shift);
         }
 
@@ -92,7 +93,8 @@ namespace Presence.Controllers
                 return NotFound();
             }
 
-            
+            if (ModelState.IsValid)
+            {
                 try
                 {
                     _context.Update(shift);
@@ -110,7 +112,7 @@ namespace Presence.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
- 
+            }
             return View(shift);
         }
 

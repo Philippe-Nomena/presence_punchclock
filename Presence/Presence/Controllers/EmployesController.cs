@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Presence.Data;
@@ -18,7 +22,7 @@ namespace Presence.Controllers
         // GET: Employes
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Employes.Include(e => e.Postal);
+            var applicationDbContext = _context.Employes.Include(e => e.Departement).Include(e => e.Postal);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -31,6 +35,7 @@ namespace Presence.Controllers
             }
 
             var employe = await _context.Employes
+                .Include(e => e.Departement)
                 .Include(e => e.Postal)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (employe == null)
@@ -41,12 +46,6 @@ namespace Presence.Controllers
             return View(employe);
         }
 
-        // GET: Employes/Create
-        public IActionResult Create()
-        {
-            ViewData["IdCode_Postal"] = new SelectList(_context.Postals, "Id", "Code_Postal");
-            return View();
-        }
         public class BarcodeHelper
         {
             public static string GenerateBarcode(int employeId, string rootBarcode)
@@ -87,7 +86,7 @@ namespace Presence.Controllers
                         }
                     }
 
-                    return fileName; 
+                    return fileName;
 
                 }
                 catch (UnauthorizedAccessException ex)
@@ -107,7 +106,6 @@ namespace Presence.Controllers
                 }
             }
         }
-
 
         [HttpGet("GetBarcode/{employeId}")]
         public IActionResult GetBarcode(int employeId)
@@ -134,22 +132,32 @@ namespace Presence.Controllers
             return File(fileBytes, "image/png", fileName);
         }
 
+        // GET: Employes/Create
+        public IActionResult Create()
+        {
+            ViewData["IdDepartement"] = new SelectList(_context.Departements, "Id", "NomDepartement");
+            ViewData["IdCode_Postal"] = new SelectList(_context.Postals, "Id", "Code_Postal");
+            return View();
+        }
+
+        // POST: Employes/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IdCode_Postal,Nom,Prenom,Sexe,Naissance,Courriel,Adresse,Telephone,Telephone_Urgence,Barcode")] Employe employe)
+        public async Task<IActionResult> Create([Bind("Id,IdCode_Postal,IdDepartement,FirstName,LastName,Sexe,BirthDate,HireDate,Email,Address,City,Region,Country,Phone,Extension,Photo,EmployeeNotes,Barcode")] Employe employe)
         {
             try
             {
                 _context.Add(employe);
-                await _context.SaveChangesAsync(); // Ensure ID is generated before barcode creation
+                await _context.SaveChangesAsync(); 
 
                 string rootBarcodePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "barcodes");
 
-                // Generate barcode and save the file name
                 string barcodeName = BarcodeHelper.GenerateBarcode(employe.Id, rootBarcodePath);
                 employe.Barcode = barcodeName;
 
-                await _context.SaveChangesAsync(); // Save barcode name
+                await _context.SaveChangesAsync();
 
                 return RedirectToAction(nameof(Index));
             }
@@ -159,10 +167,10 @@ namespace Presence.Controllers
                 Console.WriteLine($"Barcode generation failed: {ex.Message}"); // Log error
                 return View(employe);
             }
+
         }
 
-
-
+        // GET: Employes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -175,6 +183,7 @@ namespace Presence.Controllers
             {
                 return NotFound();
             }
+            ViewData["IdDepartement"] = new SelectList(_context.Departements, "Id", "NomDepartement", employe.IdDepartement);
             ViewData["IdCode_Postal"] = new SelectList(_context.Postals, "Id", "Code_Postal", employe.IdCode_Postal);
             return View(employe);
         }
@@ -184,15 +193,14 @@ namespace Presence.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,IdCode_Postal,Nom,Prenom,Sexe,Naissance,Courriel,Adresse,Telephone,Telephone_Urgence,Barcode")] Employe employe)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,IdCode_Postal,IdDepartement,FirstName,LastName,Sexe,BirthDate,HireDate,Email,Address,City,Region,Country,Phone,Extension,Photo,EmployeeNotes,Barcode")] Employe employe)
         {
             if (id != employe.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+           
                 try
                 {
                     _context.Update(employe);
@@ -210,7 +218,8 @@ namespace Presence.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
+       
+            ViewData["IdDepartement"] = new SelectList(_context.Departements, "Id", "NomDepartement", employe.IdDepartement);
             ViewData["IdCode_Postal"] = new SelectList(_context.Postals, "Id", "Code_Postal", employe.IdCode_Postal);
             return View(employe);
         }
@@ -224,6 +233,7 @@ namespace Presence.Controllers
             }
 
             var employe = await _context.Employes
+                .Include(e => e.Departement)
                 .Include(e => e.Postal)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (employe == null)

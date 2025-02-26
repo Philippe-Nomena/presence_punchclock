@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,8 +9,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Presence.Data;
 using Presence.Models;
-using static Presence.Controllers.EmployesController;
-
+using OfficeOpenXml;
 namespace Presence.Controllers
 {
     public class PresentsController : Controller
@@ -53,7 +53,7 @@ namespace Presence.Controllers
         public IActionResult Create()
         {
             ViewData["IdDepartement"] = new SelectList(_context.Departements, "Id", "NomDepartement");
-            ViewData["IdEmploye"] = new SelectList(_context.Employes, "Id", "Nom");
+            ViewData["IdEmploye"] = new SelectList(_context.Employes, "Id", "LastName");
             ViewData["IdShift"] = new SelectList(_context.Shifts, "Id", "ShiftName");
             return View();
         }
@@ -72,7 +72,7 @@ namespace Presence.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdDepartement"] = new SelectList(_context.Departements, "Id", "NomDepartement", present.IdDepartement);
-            ViewData["IdEmploye"] = new SelectList(_context.Employes, "Id", "Nom", present.IdEmploye);
+            ViewData["IdEmploye"] = new SelectList(_context.Employes, "Id", "LastName", present.IdEmploye);
             ViewData["IdShift"] = new SelectList(_context.Shifts, "Id", "ShiftName", present.IdShift);
             return View(present);
         }
@@ -91,7 +91,7 @@ namespace Presence.Controllers
                 return NotFound();
             }
             ViewData["IdDepartement"] = new SelectList(_context.Departements, "Id", "NomDepartement", present.IdDepartement);
-            ViewData["IdEmploye"] = new SelectList(_context.Employes, "Id", "Nom", present.IdEmploye);
+            ViewData["IdEmploye"] = new SelectList(_context.Employes, "Id", "LastName", present.IdEmploye);
             ViewData["IdShift"] = new SelectList(_context.Shifts, "Id", "ShiftName", present.IdShift);
             return View(present);
         }
@@ -129,11 +129,12 @@ namespace Presence.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdDepartement"] = new SelectList(_context.Departements, "Id", "NomDepartement", present.IdDepartement);
-            ViewData["IdEmploye"] = new SelectList(_context.Employes, "Id", "Nom", present.IdEmploye);
+            ViewData["IdEmploye"] = new SelectList(_context.Employes, "Id", "LastName", present.IdEmploye);
             ViewData["IdShift"] = new SelectList(_context.Shifts, "Id", "ShiftName", present.IdShift);
             return View(present);
         }
 
+        //Upload csv function
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Upload(IFormFile csvFile)
@@ -216,13 +217,6 @@ namespace Presence.Controllers
                                 Debug.WriteLine("Invalid shift ID");
                             }
 
-                         
-
-                        
-
-                      
-
-                           
 
                             var present = new Present
                             {
@@ -269,6 +263,59 @@ namespace Presence.Controllers
         }
 
 
+        [HttpGet]
+        public async Task<IActionResult> ExportToExcel()
+        {
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+
+            // Load presences with related data
+            var presences = await _context.Presents
+                 .Include(p => p.Departement)
+                .Include(p => p.Employe)
+                .Include(p => p.Shift)
+                .ToListAsync();
+
+            using (var package = new ExcelPackage())
+            {
+                // Create a worksheet
+                var worksheet = package.Workbook.Worksheets.Add("Rapport_de_presence");
+
+                // Add headers
+                worksheet.Cells[1, 1].Value = "ID";
+                worksheet.Cells[1, 2].Value = "Jour";
+                worksheet.Cells[1, 3].Value = "Heure d'entree ";
+                worksheet.Cells[1, 4].Value = "Heure de sortie";
+                worksheet.Cells[1, 5].Value = "Departement";
+                worksheet.Cells[1, 6].Value = "Employe";
+                worksheet.Cells[1, 7].Value = "Shift";
+                worksheet.Cells[1, 8].Value = "Status";
+
+
+                // Add data rows
+                for (int i = 0; i < presences.Count; i++)
+                {
+                    var present = presences[i];
+                    worksheet.Cells[i + 2, 1].Value = present.Id;
+                    worksheet.Cells[i + 2, 2].Value = present.Jour.Value.ToString("dd/MM/yyyy") ?? "N/A";
+                    worksheet.Cells[i + 2, 3].Value = present.JourIn;
+                    worksheet.Cells[i + 2, 4].Value = present.JourOut;
+                    worksheet.Cells[i + 2, 5].Value = present.Departement?.NomDepartement?? "N/A";
+                    worksheet.Cells[i + 2, 6].Value = present.Employe?.FirstName ?? "N/A";
+                    worksheet.Cells[i + 2, 7].Value = present.Shift?.ShiftName??"N/A";
+                    worksheet.Cells[i + 2, 8].Value = present.Presente;
+                  
+                }
+
+                // Auto-fit columns
+                worksheet.Cells.AutoFitColumns();
+
+                // Generate Excel file as a byte array
+                var excelFile = package.GetAsByteArray();
+
+                // Return the file
+                return File(excelFile, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "Rapport_de_presence.xlsx");
+            }
+        }
         private DateOnly? ParseDate(string dateString)
         {
             // Define multiple possible formats to parse

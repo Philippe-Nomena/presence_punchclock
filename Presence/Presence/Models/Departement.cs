@@ -16,5 +16,6 @@ namespace Presence.Models
         public Organisation?Organisation { get; set; }
 
         public ICollection<Present>? Presences { get; set; }
+        public ICollection<Employe>? Employes { get; set; }
     }
 }

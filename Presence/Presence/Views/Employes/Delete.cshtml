@@ -12,13 +12,16 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nom)
+            @Html.DisplayNameFor(model => model.FirstName)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nom)
+            @Html.DisplayFor(model => model.FirstName)
         </dd>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Prenom)
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Sexe)
@@ -27,34 +30,70 @@
             @Html.DisplayFor(model => model.Sexe)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Naissance)
+            @Html.DisplayNameFor(model => model.BirthDate)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Naissance)
+            @Html.DisplayFor(model => model.BirthDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Courriel)
+            @Html.DisplayNameFor(model => model.HireDate)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Courriel)
+            @Html.DisplayFor(model => model.HireDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Adresse)
+            @Html.DisplayNameFor(model => model.Email)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Adresse)
+            @Html.DisplayFor(model => model.Email)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telephone)
+            @Html.DisplayNameFor(model => model.Address)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Telephone)
+            @Html.DisplayFor(model => model.Address)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telephone_Urgence)
+            @Html.DisplayNameFor(model => model.City)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Telephone_Urgence)
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Region)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Region)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Extension)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Extension)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmployeeNotes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmployeeNotes)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Barcode)
@@ -66,7 +105,13 @@
             @Html.DisplayNameFor(model => model.Postal)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Postal.Id)
+            @Html.DisplayFor(model => model.Postal.Code_Postal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Departement)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Departement.NomDepartement)
         </dd>
     </dl>
     

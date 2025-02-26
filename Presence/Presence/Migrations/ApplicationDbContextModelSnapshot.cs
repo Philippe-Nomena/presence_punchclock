@@ -253,39 +253,62 @@ namespace Presence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Adresse")
+                    b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Barcode")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Courriel")
+                    b.Property<DateOnly>("BirthDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmployeeNotes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Extension")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateOnly>("HireDate")
+                        .HasColumnType("date");
 
                     b.Property<int>("IdCode_Postal")
                         .HasColumnType("int");
 
-                    b.Property<DateOnly>("Naissance")
-                        .HasColumnType("date");
+                    b.Property<int>("IdDepartement")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Nom")
+                    b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Prenom")
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Photo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Region")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Sexe")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Telephone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Telephone_Urgence")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("IdCode_Postal");
+
+                    b.HasIndex("IdDepartement");
 
                     b.ToTable("Employes");
                 });
@@ -333,6 +356,9 @@ namespace Presence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("DepartementId")
+                        .HasColumnType("int");
+
                     b.Property<int>("IdDepartement")
                         .HasColumnType("int");
 
@@ -342,7 +368,7 @@ namespace Presence.Migrations
                     b.Property<int>("IdShift")
                         .HasColumnType("int");
 
-                    b.Property<DateOnly>("Jour")
+                    b.Property<DateOnly?>("Jour")
                         .HasColumnType("date");
 
                     b.Property<string>("JourIn")
@@ -354,13 +380,20 @@ namespace Presence.Migrations
                     b.Property<bool>("Presente")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("ShiftId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("DepartementId");
 
                     b.HasIndex("IdDepartement");
 
                     b.HasIndex("IdEmploye");
 
                     b.HasIndex("IdShift");
+
+                    b.HasIndex("ShiftId");
 
                     b.ToTable("Presents");
                 });
@@ -463,28 +496,44 @@ namespace Presence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Presence.Models.Departement", "Departement")
+                        .WithMany("Employes")
+                        .HasForeignKey("IdDepartement")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Departement");
+
                     b.Navigation("Postal");
                 });
 
             modelBuilder.Entity("Presence.Models.Present", b =>
                 {
-                    b.HasOne("Presence.Models.Departement", "Departement")
+                    b.HasOne("Presence.Models.Departement", null)
                         .WithMany("Presences")
+                        .HasForeignKey("DepartementId");
+
+                    b.HasOne("Presence.Models.Departement", "Departement")
+                        .WithMany()
                         .HasForeignKey("IdDepartement")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Presence.Models.Employe", "Employe")
                         .WithMany("Presences")
                         .HasForeignKey("IdEmploye")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Presence.Models.Shift", "Shift")
-                        .WithMany("Presences")
+                        .WithMany()
                         .HasForeignKey("IdShift")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
+
+                    b.HasOne("Presence.Models.Shift", null)
+                        .WithMany("Presences")
+                        .HasForeignKey("ShiftId");
 
                     b.Navigation("Departement");
 
@@ -495,6 +544,8 @@ namespace Presence.Migrations
 
             modelBuilder.Entity("Presence.Models.Departement", b =>
                 {
+                    b.Navigation("Employes");
+
                     b.Navigation("Presences");
                 });
 

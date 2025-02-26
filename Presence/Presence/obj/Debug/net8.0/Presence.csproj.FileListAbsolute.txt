@@ -547,3 +547,7 @@ C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Deb
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\Presence.pdb
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\Presence.genruntimeconfig.cache
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\ref\Presence.dll
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\EPPlus.dll
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\EPPlus.Interfaces.dll
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll

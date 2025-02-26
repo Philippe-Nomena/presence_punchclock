@@ -4,34 +4,44 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Presence</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-    <div class="mt-2">
+<div class="d-flex flex-row gap-3">
+    <div>
+        <p>
+            <a asp-action="Create" class="btn btn-success"><span class="bi bi-plus">Creer</span></a>
+        </p>
+    </div>
+    <div >
         <form asp-action="Upload" method="post" enctype="multipart/form-data" class="d-flex align-items-center gap-3">
             <div>
 
                 <input type="file" name="csvFile" class="form-control" accept=".csv" required />
             </div>
-            <button type="submit" class="btn btn-secondary">Importer</button>
+            <button type="submit" class="btn btn-dark ">Importer</button>
         </form>
     </div>
-</p>
-<table class="table">
-    <thead>
+    <div >
+        <p class="align-items-center ">
+           
+            <a class="btn btn-secondary" href="/Presents/ExportToExcel">Exporter</a>
+        </p>
+    </div>
+</div>
+<table class="table table-bordered mt-2">
+    <thead class="text-center">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Jour)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Presente)
+                Status
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.JourIn)
+                Heure d'entree
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.JourOut)
+                Heure de sortie
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Departement)
@@ -42,10 +52,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.Shift)
             </th>
-            <th></th>
+            <th>Action</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="text-center">
 @foreach (var item in Model) {
         <tr>
             <td>
@@ -64,15 +74,15 @@
                 @Html.DisplayFor(modelItem => item.Departement.NomDepartement)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Employe.Nom)-@Html.DisplayFor(modelItem => item.Employe.Prenom)
+                    @Html.DisplayFor(modelItem => item.Employe.FirstName)- @Html.DisplayFor(modelItem => item.Employe.LastName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Shift.ShiftName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><span class="bi bi-pencil">Edit</span></a> 
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info text-white"><span class="bi bi-eye">Details</span></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><span class="bi bi-trash">Delete</span></a>
             </td>
         </tr>
 }

@@ -51,7 +51,7 @@ namespace Presence.Controllers
             ViewData["IdOrganisation"] = new SelectList(_context.Organisations, "Id", "Nom_Organisation");
             return View();
         }
-        
+
         // POST: Departements/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.

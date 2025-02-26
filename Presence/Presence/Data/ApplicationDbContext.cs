@@ -10,13 +10,36 @@ namespace Presence.Data
             : base(options)
         {
         }
-        public DbSet<Postal>Postals  { get; set; } = null;
-        public DbSet<Employe> Employes  { get; set; } = null;
-        public DbSet<Organisation> Organisations { get; set; } = null;
-        public DbSet<Departement> Departements { get; set; }
-        public DbSet<Shift> Shifts { get; set; } = null;
-        public DbSet<Present> Presents { get; set; } = null;
 
+        public DbSet<Postal> Postals { get; set; } = default!;
+        public DbSet<Employe> Employes { get; set; } = default!;
+        public DbSet<Organisation> Organisations { get; set; } = default!;
+        public DbSet<Departement> Departements { get; set; } = default!;
+        public DbSet<Shift> Shifts { get; set; } = default!;
+        public DbSet<Present> Presents { get; set; } = default!;
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+          
+            modelBuilder.Entity<Present>()
+                .HasOne(p => p.Employe)
+                .WithMany(e => e.Presences)
+                .HasForeignKey(p => p.IdEmploye)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Present>()
+                .HasOne(p => p.Departement)
+                .WithMany()
+                .HasForeignKey(p => p.IdDepartement)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Present>()
+                .HasOne(p => p.Shift)
+                .WithMany()
+                .HasForeignKey(p => p.IdShift)
+                .OnDelete(DeleteBehavior.NoAction);
+        }
     }
 }
