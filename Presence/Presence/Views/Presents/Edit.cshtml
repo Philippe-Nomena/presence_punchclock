@@ -1,64 +1,80 @@
 ﻿@model Presence.Models.Present
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Present";
 }
 
-<h1>Edit</h1>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Edit Present</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger d-none"></div>
+                        <input type="hidden" asp-for="Id" />
 
-<h4>Present</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="IdDepartement" class="control-label"></label>
-                <select asp-for="IdDepartement" class="form-control" asp-items="ViewBag.IdDepartement"></select>
-                <span asp-validation-for="IdDepartement" class="text-danger"></span>
+                        <div class="mb-3">
+                            <label asp-for="IdDepartement" class="form-label fw-bold"></label>
+                            <select asp-for="IdDepartement" class="form-control" asp-items="ViewBag.IdDepartement"></select>
+                            <span asp-validation-for="IdDepartement" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="IdEmploye" class="form-label fw-bold"></label>
+                            <select asp-for="IdEmploye" class="form-control" asp-items="ViewBag.IdEmploye"></select>
+                            <span asp-validation-for="IdEmploye" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="IdShift" class="form-label fw-bold"></label>
+                            <select asp-for="IdShift" class="form-control" asp-items="ViewBag.IdShift"></select>
+                            <span asp-validation-for="IdShift" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Jour" class="form-label fw-bold"></label>
+                            <input asp-for="Jour" type="date" class="form-control" />
+                            <span asp-validation-for="Jour" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" asp-for="Presente" /> @Html.DisplayNameFor(model => model.Presente)
+                            </label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="JourIn" class="form-label fw-bold"></label>
+                            <input asp-for="JourIn" type="time" class="form-control" />
+                            <span asp-validation-for="JourIn" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="JourOut" class="form-label fw-bold"></label>
+                            <input asp-for="JourOut" type="time" class="form-control" />
+                            <span asp-validation-for="JourOut" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left"></i> Back to List
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-save"></i> Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="IdEmploye" class="control-label"></label>
-                <select asp-for="IdEmploye" class="form-control" asp-items="ViewBag.IdEmploye"></select>
-                <span asp-validation-for="IdEmploye" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdShift" class="control-label"></label>
-                <select asp-for="IdShift" class="form-control" asp-items="ViewBag.IdShift"></select>
-                <span asp-validation-for="IdShift" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Jour" class="control-label"></label>
-                <input asp-for="Jour" class="form-control" />
-                <span asp-validation-for="Jour" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Presente" /> @Html.DisplayNameFor(model => model.Presente)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="JourIn" class="control-label"></label>
-                <input asp-for="JourIn" class="form-control" />
-                <span asp-validation-for="JourIn" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="JourOut" class="control-label"></label>
-                <input asp-for="JourOut" class="form-control" />
-                <span asp-validation-for="JourOut" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

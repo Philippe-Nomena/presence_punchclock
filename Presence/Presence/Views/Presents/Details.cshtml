@@ -4,57 +4,46 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-info text-white text-center">
+                    <h3>Present Details</h3>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4 fw-bold">Date:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Jour)</dd>
 
-<div>
-    <h4>Present</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Jour)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Jour)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Presente)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Presente)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.JourIn)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.JourIn)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.JourOut)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.JourOut)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Departement)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Departement.NomDepartement)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Employe)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Employe.FirstName)- @Html.DisplayFor(model => model.Employe.LastName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Shift)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Shift.ShiftName)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+                        <dt class="col-sm-4 fw-bold">Present:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Presente)</dd>
+
+                        <dt class="col-sm-4 fw-bold">In Time:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.JourIn)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Out Time:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.JourOut)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Department:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Departement.NomDepartement)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Employee:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Employe.FirstName) @Html.DisplayFor(model => model.Employe.LastName)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Shift:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Shift.ShiftName)</dd>
+                    </dl>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-info text-white">
+                        <i class="bi bi-pencil-square"></i> Edit
+                    </a>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

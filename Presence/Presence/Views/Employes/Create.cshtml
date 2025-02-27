@@ -4,108 +4,149 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>Employe</h4>
+<h1>Create Employee</h1>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="IdCode_Postal" class="control-label"></label>
-                <select asp-for="IdCode_Postal" class ="form-control" asp-items="ViewBag.IdCode_Postal"></select>
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header bg-success text-white text-center">
+                    <h3>Create New Employee</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger d-none"></div>
+
+                        <!-- Code Postal Field -->
+                        <div class="mb-3">
+                            <label asp-for="IdCode_Postal" class="form-label fw-bold"></label>
+                            <select asp-for="IdCode_Postal" class="form-control" asp-items="ViewBag.IdCode_Postal"></select>
+                            <span asp-validation-for="IdCode_Postal" class="text-danger"></span>
+                        </div>
+
+                        <!-- IdDepartement Field -->
+                        <div class="mb-3">
+                            <label asp-for="IdDepartement" class="form-label fw-bold"></label>
+                            <select asp-for="IdDepartement" class="form-control" asp-items="ViewBag.IdDepartement"></select>
+                            <span asp-validation-for="IdDepartement" class="text-danger"></span>
+                        </div>
+
+                        <!-- First Name Field -->
+                        <div class="mb-3">
+                            <label asp-for="FirstName" class="form-label fw-bold"></label>
+                            <input asp-for="FirstName" class="form-control" />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Last Name Field -->
+                        <div class="mb-3">
+                            <label asp-for="LastName" class="form-label fw-bold"></label>
+                            <input asp-for="LastName" class="form-control" />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Sexe Field -->
+                        <div class="mb-3">
+                            <label asp-for="Sexe" class="form-label fw-bold"></label>
+                            <input asp-for="Sexe" class="form-control" />
+                            <span asp-validation-for="Sexe" class="text-danger"></span>
+                        </div>
+
+                        <!-- Birth Date Field -->
+                        <div class="mb-3">
+                            <label asp-for="BirthDate" class="form-label fw-bold"></label>
+                            <input asp-for="BirthDate" class="form-control" type="date" />
+                            <span asp-validation-for="BirthDate" class="text-danger"></span>
+                        </div>
+
+                        <!-- Hire Date Field -->
+                        <div class="mb-3">
+                            <label asp-for="HireDate" class="form-label fw-bold"></label>
+                            <input asp-for="HireDate" class="form-control" type="date" />
+                            <span asp-validation-for="HireDate" class="text-danger"></span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label fw-bold"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <!-- Address Field -->
+                        <div class="mb-3">
+                            <label asp-for="Address" class="form-label fw-bold"></label>
+                            <input asp-for="Address" class="form-control" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <!-- City Field -->
+                        <div class="mb-3">
+                            <label asp-for="City" class="form-label fw-bold"></label>
+                            <input asp-for="City" class="form-control" />
+                            <span asp-validation-for="City" class="text-danger"></span>
+                        </div>
+
+                        <!-- Region Field -->
+                        <div class="mb-3">
+                            <label asp-for="Region" class="form-label fw-bold"></label>
+                            <input asp-for="Region" class="form-control" />
+                            <span asp-validation-for="Region" class="text-danger"></span>
+                        </div>
+
+                        <!-- Country Field -->
+                        <div class="mb-3">
+                            <label asp-for="Country" class="form-label fw-bold"></label>
+                            <input asp-for="Country" class="form-control" />
+                            <span asp-validation-for="Country" class="text-danger"></span>
+                        </div>
+
+                        <!-- Phone Field -->
+                        <div class="mb-3">
+                            <label asp-for="Phone" class="form-label fw-bold"></label>
+                            <input asp-for="Phone" class="form-control" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+
+                        <!-- Extension Field -->
+                        <div class="mb-3">
+                            <label asp-for="Extension" class="form-label fw-bold"></label>
+                            <input asp-for="Extension" class="form-control" />
+                            <span asp-validation-for="Extension" class="text-danger"></span>
+                        </div>
+
+                        <!-- Photo Field -->
+                        <div class="mb-3">
+                            <label asp-for="Photo" class="form-label fw-bold"></label>
+                            <input asp-for="Photo" class="form-control" />
+                            <span asp-validation-for="Photo" class="text-danger"></span>
+                        </div>
+
+                        <!-- Employee Notes Field -->
+                        <div class="mb-3">
+                            <label asp-for="EmployeeNotes" class="form-label fw-bold"></label>
+                            <input asp-for="EmployeeNotes" class="form-control" />
+                            <span asp-validation-for="EmployeeNotes" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left"></i> Back to List
+                            </a>
+                            <button type="submit" class="btn btn-success">
+                                <i class="bi bi-check-circle"></i> Create Employee
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="IdDepartement" class="control-label"></label>
-                <select asp-for="IdDepartement" class ="form-control" asp-items="ViewBag.IdDepartement"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Sexe" class="control-label"></label>
-                <input asp-for="Sexe" class="form-control" />
-                <span asp-validation-for="Sexe" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BirthDate" class="control-label"></label>
-                <input asp-for="BirthDate" class="form-control" type="date"/>
-                <span asp-validation-for="BirthDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="HireDate" class="control-label"></label>
-                <input asp-for="HireDate" class="form-control" type="date" />
-                <span asp-validation-for="HireDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="City" class="control-label"></label>
-                <input asp-for="City" class="form-control" />
-                <span asp-validation-for="City" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Region" class="control-label"></label>
-                <input asp-for="Region" class="form-control" />
-                <span asp-validation-for="Region" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Country" class="control-label"></label>
-                <input asp-for="Country" class="form-control" />
-                <span asp-validation-for="Country" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Phone" class="control-label"></label>
-                <input asp-for="Phone" class="form-control" />
-                <span asp-validation-for="Phone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Extension" class="control-label"></label>
-                <input asp-for="Extension" class="form-control" />
-                <span asp-validation-for="Extension" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Photo" class="control-label"></label>
-                <input asp-for="Photo" class="form-control" />
-                <span asp-validation-for="Photo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EmployeeNotes" class="control-label"></label>
-                <input asp-for="EmployeeNotes" class="form-control" />
-                <span asp-validation-for="EmployeeNotes" class="text-danger"></span>
-            </div>
-         @*    <div class="form-group">
-                <label asp-for="Barcode" class="control-label"></label>
-                <input asp-for="Barcode" class="form-control" />
-                <span asp-validation-for="Barcode" class="text-danger"></span>
-            </div> *@
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

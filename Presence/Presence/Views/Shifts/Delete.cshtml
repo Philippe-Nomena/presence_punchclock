@@ -1,51 +1,49 @@
 ﻿@model Presence.Models.Shift
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Delete Shift";
 }
 
-<h1>Delete</h1>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-danger">
+                <div class="card-header bg-danger text-white text-center">
+                    <h3>Delete Shift</h3>
+                </div>
+                <div class="card-body">
+                    <h5 class="text-center text-danger">⚠️ Are you sure you want to delete this shift?</h5>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4 fw-bold">Shift Name:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.ShiftName)</dd>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Shift</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ShiftName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ShiftName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Earliest_In)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Earliest_In)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.In_Time)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.In_Time)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Out_Time)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Out_Time)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Latest_Out)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Latest_Out)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+                        <dt class="col-sm-4 fw-bold">Earliest In:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Earliest_In)</dd>
+
+                        <dt class="col-sm-4 fw-bold">In Time:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.In_Time)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Out Time:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Out_Time)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Latest Out:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Latest_Out)</dd>
+                    </dl>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i> Back to List
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="bi bi-trash"></i> Delete Shift
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,54 +1,68 @@
 ﻿@model Presence.Models.Shift
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Shift";
 }
 
-<h1>Edit</h1>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Edit Shift</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger d-none"></div>
+                        <input type="hidden" asp-for="Id" />
 
-<h4>Shift</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="ShiftName" class="control-label"></label>
-                <input asp-for="ShiftName" class="form-control" />
-                <span asp-validation-for="ShiftName" class="text-danger"></span>
+                        <div class="mb-3">
+                            <label asp-for="ShiftName" class="form-label fw-bold"></label>
+                            <input asp-for="ShiftName" class="form-control" placeholder="Enter shift name" />
+                            <span asp-validation-for="ShiftName" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Earliest_In" class="form-label fw-bold"></label>
+                            <input asp-for="Earliest_In" type="time" class="form-control" />
+                            <span asp-validation-for="Earliest_In" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="In_Time" class="form-label fw-bold"></label>
+                            <input asp-for="In_Time" type="time" class="form-control" />
+                            <span asp-validation-for="In_Time" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Out_Time" class="form-label fw-bold"></label>
+                            <input asp-for="Out_Time" type="time" class="form-control" />
+                            <span asp-validation-for="Out_Time" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Latest_Out" class="form-label fw-bold"></label>
+                            <input asp-for="Latest_Out" type="time" class="form-control" />
+                            <span asp-validation-for="Latest_Out" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left"></i> Back to List
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-save"></i> Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Earliest_In" class="control-label"></label>
-                <input asp-for="Earliest_In" class="form-control" />
-                <span asp-validation-for="Earliest_In" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="In_Time" class="control-label"></label>
-                <input asp-for="In_Time" class="form-control" />
-                <span asp-validation-for="In_Time" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Out_Time" class="control-label"></label>
-                <input asp-for="Out_Time" class="form-control" />
-                <span asp-validation-for="Out_Time" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Latest_Out" class="control-label"></label>
-                <input asp-for="Latest_Out" class="form-control" />
-                <span asp-validation-for="Latest_Out" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

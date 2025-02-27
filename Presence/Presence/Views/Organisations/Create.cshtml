@@ -1,33 +1,43 @@
 ﻿@model Presence.Models.Organisation
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Organisation";
 }
 
-<h1>Create</h1>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header bg-success text-white text-center">
+                    <h3>Create Organisation</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger d-none"></div>
 
-<h4>Organisation</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Nom_Organisation" class="control-label"></label>
-                <input asp-for="Nom_Organisation" class="form-control" />
-                <span asp-validation-for="Nom_Organisation" class="text-danger"></span>
+                        <div class="mb-3">
+                            <label asp-for="Nom_Organisation" class="form-label fw-bold"></label>
+                            <input asp-for="Nom_Organisation" class="form-control" placeholder="Enter organisation name" />
+                            <span asp-validation-for="Nom_Organisation" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i> Back to List
+                            </a>
+                            <button type="submit" class="btn btn-success">
+                                <i class="bi bi-save"></i> Create
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

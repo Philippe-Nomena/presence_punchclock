@@ -3,130 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\controllers\\presentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\controllers\\presentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\presents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\presents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\philippe\\.nuget\\packages\\epplus\\7.3.2\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\philippe\\.nuget\\packages\\epplus\\7.6.0\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\employes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\employes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\presents\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\presents\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\employes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\employes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\postals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\postals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\organisations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\organisations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\shifts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\shifts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\departements\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\departements\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\controllers\\employescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\controllers\\employescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\employes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\employes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\controllers\\departementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\controllers\\departementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\departements\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\departements\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\departements\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\departements\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\departements\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\departements\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\employes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\employes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\presents\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\presents\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\presents\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\presents\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\models\\shift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\models\\shift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\models\\departement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\models\\departement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\models\\present.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\models\\present.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\employes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\employes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\controllers\\organisationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\controllers\\organisationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\controllers\\postalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\controllers\\postalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\controllers\\shiftscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\controllers\\shiftscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\models\\postal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\models\\postal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\models\\organisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\models\\organisation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\postals\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\postals\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -136,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -144,418 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "readme.txt",
-              "DocumentMoniker": "C:\\Users\\philippe\\.nuget\\packages\\epplus\\7.3.2\\readme.txt",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\epplus\\7.3.2\\readme.txt",
-              "ToolTip": "C:\\Users\\philippe\\.nuget\\packages\\epplus\\7.3.2\\readme.txt",
-              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\epplus\\7.3.2\\readme.txt",
-              "ViewState": "AQIAADYAAAAAAAAAAAAswGEAAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-02-26T16:40:32.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "readme.txt",
-              "DocumentMoniker": "C:\\Users\\philippe\\.nuget\\packages\\epplus\\7.6.0\\readme.txt",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\epplus\\7.6.0\\readme.txt",
-              "ToolTip": "C:\\Users\\philippe\\.nuget\\packages\\epplus\\7.6.0\\readme.txt",
-              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\epplus\\7.6.0\\readme.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-02-26T16:37:18.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Postals\\Index.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Postals\\Index.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Postals\\Index.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Postals\\Index.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAAB2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T14:25:18.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Organisations\\Index.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Organisations\\Index.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Organisations\\Index.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Organisations\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T13:13:03.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Shifts\\Index.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Shifts\\Index.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Shifts\\Index.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Shifts\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T19:52:18.09Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Employes\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Delete.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Employes\\Delete.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAIBJwG0AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T16:58:04.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Departements\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Departements\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Departements\\Edit.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Departements\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T16:44:04.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Departements\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Departements\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Departements\\Delete.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Departements\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBcAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T16:43:40.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Departements\\Details.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Departements\\Details.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Departements\\Details.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Departements\\Details.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAIBJwBYAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T16:43:31.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Departements\\Index.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Departements\\Index.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Departements\\Index.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Departements\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABQAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T16:43:23.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Details.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Employes\\Details.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Details.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Employes\\Details.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAIBJwHAAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T16:41:09.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Presents\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Presents\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Presents\\Delete.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Presents\\Delete.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAIBJwDUAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-21T19:09:44.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Presents\\Details.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Presents\\Details.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Presents\\Details.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Presents\\Details.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAIBJwDQAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-21T19:09:00.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Departement.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Departement.cs",
-              "RelativeDocumentMoniker": "Presence\\Models\\Departement.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Departement.cs",
-              "RelativeToolTip": "Presence\\Models\\Departement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T18:58:32.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Index.cshtml",
               "RelativeDocumentMoniker": "Presence\\Views\\Employes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Index.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Employes\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA2AAAA",
+              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Index.cshtml*",
+              "RelativeToolTip": "Presence\\Views\\Employes\\Index.cshtml*",
+              "ViewState": "AQIAADUAAAAAAAAAAAAcwE4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-21T15:23:00.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Employes\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Edit.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Employes\\Edit.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAC8AAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-21T15:22:19.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Create.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Employes\\Create.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Create.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Employes\\Create.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAuwCwAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-21T15:12:05.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Presents\\Create.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Presents\\Create.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Presents\\Create.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Presents\\Create.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAMAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-21T15:11:53.671Z",
+              "WhenOpened": "2025-02-27T20:18:54.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Presents\\Index.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Presents\\Index.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Presents\\Index.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Presents\\Index.cshtml",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAUwBcAAAAJAAAA",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Presence\\Views\\Employes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Create.cshtml",
+              "RelativeToolTip": "Presence\\Views\\Employes\\Create.cshtml",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAUwJgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-21T15:07:56.498Z",
+              "WhenOpened": "2025-02-27T20:16:33.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PresentsController.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\PresentsController.cs",
-              "RelativeDocumentMoniker": "Presence\\Controllers\\PresentsController.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\PresentsController.cs",
-              "RelativeToolTip": "Presence\\Controllers\\PresentsController.cs",
-              "ViewState": "AQIAAEoBAAAAAAAAAAAswFoBAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T14:55:46.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EmployesController.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\EmployesController.cs",
-              "RelativeDocumentMoniker": "Presence\\Controllers\\EmployesController.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\EmployesController.cs",
-              "RelativeToolTip": "Presence\\Controllers\\EmployesController.cs",
-              "ViewState": "AQIAALsAAAAAAAAAAAAYwNAAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T14:54:43.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "OrganisationsController.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\OrganisationsController.cs",
-              "RelativeDocumentMoniker": "Presence\\Controllers\\OrganisationsController.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\OrganisationsController.cs",
-              "RelativeToolTip": "Presence\\Controllers\\OrganisationsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T14:51:54.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Present.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Present.cs",
-              "RelativeDocumentMoniker": "Presence\\Models\\Present.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Present.cs",
-              "RelativeToolTip": "Presence\\Models\\Present.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T14:50:14.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DepartementsController.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\DepartementsController.cs",
-              "RelativeDocumentMoniker": "Presence\\Controllers\\DepartementsController.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\DepartementsController.cs",
-              "RelativeToolTip": "Presence\\Controllers\\DepartementsController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwHgAAABnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T14:51:08.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PostalsController.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\PostalsController.cs",
-              "RelativeDocumentMoniker": "Presence\\Controllers\\PostalsController.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\PostalsController.cs",
-              "RelativeToolTip": "Presence\\Controllers\\PostalsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T14:49:59.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ShiftsController.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\ShiftsController.cs",
-              "RelativeDocumentMoniker": "Presence\\Controllers\\ShiftsController.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\ShiftsController.cs",
-              "RelativeToolTip": "Presence\\Controllers\\ShiftsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T14:49:23.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Employe.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Employe.cs",
-              "RelativeDocumentMoniker": "Presence\\Models\\Employe.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Employe.cs",
-              "RelativeToolTip": "Presence\\Models\\Employe.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvw8AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T14:51:17.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Postal.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Postal.cs",
-              "RelativeDocumentMoniker": "Presence\\Models\\Postal.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Postal.cs",
-              "RelativeToolTip": "Presence\\Models\\Postal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T20:12:53.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Presence\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Presence\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAUwA4AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T18:19:55.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAmwEYAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Postals\\Create.cshtml",
+              "RelativeDocumentMoniker": "Presence\\Views\\Postals\\Create.cshtml",
+              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Postals\\Create.cshtml",
+              "RelativeToolTip": "Presence\\Views\\Postals\\Create.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAUwDMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T18:00:12.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Shift.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Shift.cs",
-              "RelativeDocumentMoniker": "Presence\\Models\\Shift.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Shift.cs",
-              "RelativeToolTip": "Presence\\Models\\Shift.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T14:49:06.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Organisation.cs",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Organisation.cs",
-              "RelativeDocumentMoniker": "Presence\\Models\\Organisation.cs",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Models\\Organisation.cs",
-              "RelativeToolTip": "Presence\\Models\\Organisation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T14:51:27.308Z",
+              "WhenOpened": "2025-02-27T20:16:18.472Z",
               "EditorCaption": ""
             }
           ]

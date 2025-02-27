@@ -1,39 +1,112 @@
-﻿@model Presence.Models.Postal
+﻿@model Presence.Models.Employe
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Employee Details";
 }
 
-<h1>Edit</h1>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Employee Details</h3>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">First Name</label>
+                        <p>@Html.DisplayFor(model => model.FirstName)</p>
+                    </div>
 
-<h4>Postal</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Code_Postal" class="control-label"></label>
-                <input asp-for="Code_Postal" class="form-control" />
-                <span asp-validation-for="Code_Postal" class="text-danger"></span>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Last Name</label>
+                        <p>@Html.DisplayFor(model => model.LastName)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Sexe</label>
+                        <p>@Html.DisplayFor(model => model.Sexe)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Birth Date</label>
+                        <p>@Html.DisplayFor(model => model.BirthDate)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Hire Date</label>
+                        <p>@Html.DisplayFor(model => model.HireDate)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Email</label>
+                        <p>@Html.DisplayFor(model => model.Email)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Address</label>
+                        <p>@Html.DisplayFor(model => model.Address)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">City</label>
+                        <p>@Html.DisplayFor(model => model.City)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Region</label>
+                        <p>@Html.DisplayFor(model => model.Region)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Country</label>
+                        <p>@Html.DisplayFor(model => model.Country)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Phone</label>
+                        <p>@Html.DisplayFor(model => model.Phone)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Extension</label>
+                        <p>@Html.DisplayFor(model => model.Extension)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Photo</label>
+                        <p>@Html.DisplayFor(model => model.Photo)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Employee Notes</label>
+                        <p>@Html.DisplayFor(model => model.EmployeeNotes)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Barcode</label>
+                        <p>@Html.DisplayFor(model => model.Barcode)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Postal Code</label>
+                        <p>@Html.DisplayFor(model => model.Postal.Code_Postal)</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Department</label>
+                        <p>@Html.DisplayFor(model => model.Departement.NomDepartement)</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="Index" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left"></i> Back to List
+                        </a>
+                        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">
+                            <i class="bi bi-pencil"></i> Edit
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Pays" class="control-label"></label>
-                <input asp-for="Pays" class="form-control" />
-                <span asp-validation-for="Pays" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

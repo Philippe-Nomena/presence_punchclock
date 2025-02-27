@@ -1,48 +1,43 @@
 ﻿@model Presence.Models.Shift
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Shift Details";
 }
 
-<h1>Details</h1>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-info text-white text-center">
+                    <h3>Shift Details</h3>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4 fw-bold">Shift Name:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.ShiftName)</dd>
 
-<div>
-    <h4>Shift</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ShiftName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ShiftName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Earliest_In)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Earliest_In)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.In_Time)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.In_Time)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Out_Time)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Out_Time)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Latest_Out)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Latest_Out)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+                        <dt class="col-sm-4 fw-bold">Earliest In:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Earliest_In)</dd>
+
+                        <dt class="col-sm-4 fw-bold">In Time:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.In_Time)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Out Time:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Out_Time)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Latest Out:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Latest_Out)</dd>
+                    </dl>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-info text-white">
+                        <i class="bi bi-pencil-square"></i> Edit
+                    </a>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
