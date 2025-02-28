@@ -282,6 +282,9 @@ C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Deb
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Presence.pdb
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\EPPlus.dll
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\EPPlus.Interfaces.dll
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\EPPlus.System.Drawing.dll
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Humanizer.dll
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -328,6 +331,7 @@ C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Deb
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
@@ -547,7 +551,3 @@ C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Deb
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\Presence.pdb
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\Presence.genruntimeconfig.cache
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\ref\Presence.dll
-C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\EPPlus.dll
-C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\EPPlus.Interfaces.dll
-C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\EPPlus.System.Drawing.dll
-C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll

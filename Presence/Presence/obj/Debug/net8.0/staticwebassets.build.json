@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8G/zIQxuTg3vfsS77bF/aNLA1OCzVDF1T/7WKAUv/JE=",
+  "Hash": "5ytqNYtC39coouVTWcjV5YO2vI8R4t24+iU3sZhBVts=",
   "Source": "Presence",
   "BasePath": "_content/Presence",
   "Mode": "Default",
@@ -1195,12 +1195,12 @@
       "OriginalItemSpec": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Presence.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\wwwroot\\barcodes\\1_barcode.png",
+      "Identity": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\wwwroot\\barcodes\\10_barcode.png",
       "SourceId": "Presence",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\wwwroot\\",
       "BasePath": "_content/Presence",
-      "RelativePath": "barcodes/1_barcode.png",
+      "RelativePath": "barcodes/10_barcode.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1211,7 +1211,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\barcodes\\1_barcode.png"
+      "OriginalItemSpec": "wwwroot\\barcodes\\10_barcode.png"
     },
     {
       "Identity": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\wwwroot\\css\\site.css",

@@ -25,7 +25,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                Code Postal
+                    @Html.DisplayFor(modelItem => item.Code_Postal)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Pays)

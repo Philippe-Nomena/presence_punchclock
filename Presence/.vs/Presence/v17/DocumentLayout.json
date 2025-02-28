@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\employes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\employes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\employes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\views\\postals\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\views\\postals\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\controllers\\employescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\controllers\\employescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,37 +30,24 @@
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Index.cshtml",
               "RelativeDocumentMoniker": "Presence\\Views\\Employes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Index.cshtml*",
-              "RelativeToolTip": "Presence\\Views\\Employes\\Index.cshtml*",
-              "ViewState": "AQIAADUAAAAAAAAAAAAcwE4AAAAAAAAA",
+              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Index.cshtml",
+              "RelativeToolTip": "Presence\\Views\\Employes\\Index.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEUAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T20:18:54.643Z",
+              "WhenOpened": "2025-02-28T19:04:11.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Create.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Employes\\Create.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Create.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Employes\\Create.cshtml",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAUwJgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T20:16:33.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Postals\\Create.cshtml",
-              "RelativeDocumentMoniker": "Presence\\Views\\Postals\\Create.cshtml",
-              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Postals\\Create.cshtml",
-              "RelativeToolTip": "Presence\\Views\\Postals\\Create.cshtml",
-              "ViewState": "AQIAABoAAAAAAAAAAAAUwDMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T20:16:18.472Z",
+              "Title": "EmployesController.cs",
+              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\EmployesController.cs",
+              "RelativeDocumentMoniker": "Presence\\Controllers\\EmployesController.cs",
+              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\EmployesController.cs",
+              "RelativeToolTip": "Presence\\Controllers\\EmployesController.cs",
+              "ViewState": "AQIAANQAAAAAAAAAAAAYwBsBAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T14:38:17.859Z",
               "EditorCaption": ""
             }
           ]
