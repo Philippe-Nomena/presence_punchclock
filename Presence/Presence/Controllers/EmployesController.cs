@@ -396,7 +396,21 @@ namespace Presence.Controllers
                     worksheet.Cells[i + 2, 14].Value = employe.Extension;
                     worksheet.Cells[i + 2, 15].Value = employe.Photo;
                     worksheet.Cells[i + 2, 16].Value = employe.EmployeeNotes;
-                    worksheet.Cells[i + 2, 17].Value = employe.Barcode ?? "N/A";
+                    string barcodePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "barcodes", $"{employe.Id}_barcode.png");
+
+                    if (System.IO.File.Exists(barcodePath))
+                    {
+                        var image = new FileInfo(barcodePath);
+                        var picture = worksheet.Drawings.AddPicture($"Barcode_{i}", image);
+
+                        // Positioning the image in the correct cell
+                        picture.SetPosition(i + 1, 0, 16, 0); // Row index (i+1) and Column index (16 -> Col 17)
+                        picture.SetSize(60, 60); // Resize image
+                    }
+                    else
+                    {
+                        worksheet.Cells[i + 2, 17].Value = "N/A"; // If barcode doesn't exist
+                    }
                 }
 
                 // Auto-fit columns
