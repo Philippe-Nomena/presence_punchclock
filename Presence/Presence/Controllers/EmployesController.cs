@@ -403,13 +403,13 @@ namespace Presence.Controllers
                         var image = new FileInfo(barcodePath);
                         var picture = worksheet.Drawings.AddPicture($"Barcode_{i}", image);
 
-                        // Positioning the image in the correct cell
-                        picture.SetPosition(i + 1, 0, 16, 0); // Row index (i+1) and Column index (16 -> Col 17)
-                        picture.SetSize(60, 60); // Resize image
+                     
+                        picture.SetPosition(i + 1, 0, 16, 0); 
+                        picture.SetSize(60, 60);
                     }
                     else
                     {
-                        worksheet.Cells[i + 2, 17].Value = "N/A"; // If barcode doesn't exist
+                        worksheet.Cells[i + 2, 17].Value = "N/A"; 
                     }
                 }
 

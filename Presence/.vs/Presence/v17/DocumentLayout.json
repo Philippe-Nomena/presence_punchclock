@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|c:\\users\\philippe\\documents\\github\\presence_punchclock\\presence\\presence\\controllers\\employescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5BEE125-0553-4AAA-9379-C83F1D591375}|Presence\\Presence.csproj|solutionrelative:presence\\controllers\\employescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +34,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\appsettings.json",
+              "RelativeDocumentMoniker": "Presence\\appsettings.json",
+              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\appsettings.json",
+              "RelativeToolTip": "Presence\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-06T19:20:08.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Program.cs",
+              "RelativeDocumentMoniker": "Presence\\Program.cs",
+              "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Program.cs",
+              "RelativeToolTip": "Presence\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T18:22:26.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Views\\Employes\\Index.cshtml",
               "RelativeDocumentMoniker": "Presence\\Views\\Employes\\Index.cshtml",
@@ -39,13 +73,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EmployesController.cs",
               "DocumentMoniker": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\EmployesController.cs",
               "RelativeDocumentMoniker": "Presence\\Controllers\\EmployesController.cs",
               "ToolTip": "C:\\Users\\philippe\\Documents\\GitHub\\presence_punchclock\\Presence\\Presence\\Controllers\\EmployesController.cs",
               "RelativeToolTip": "Presence\\Controllers\\EmployesController.cs",
-              "ViewState": "AQIAAHgBAAAAAAAAAAAwwJwBAAAVAAAA",
+              "ViewState": "AQIAAHsBAAAAAAAAAAAwwI0BAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T14:38:17.859Z",
               "EditorCaption": ""

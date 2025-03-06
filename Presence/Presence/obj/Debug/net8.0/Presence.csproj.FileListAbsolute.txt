@@ -551,3 +551,5 @@ C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Deb
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\Presence.pdb
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\Presence.genruntimeconfig.cache
 C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\obj\Debug\net8.0\ref\Presence.dll
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\philippe\Documents\GitHub\presence_punchclock\Presence\Presence\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
